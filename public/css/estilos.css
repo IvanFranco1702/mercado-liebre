@@ -1,0 +1,370 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+/*tablet*/
+@media(min-width: 680px){
+    div.articulo .descripcion {
+        height:0;
+        width: 0;
+        opacity:0;
+        }
+    form .botones-formulario{
+        width:30%;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+    section article div.articulo{
+        
+        background-color:white;
+        padding-bottom:0%;
+        margin-top: 10px;
+        width:99%;
+        
+    }
+    section article div.articulo img{
+        width:99%;
+        }
+    .productos{
+        width:100%;
+    }   
+    header{
+        width:100%;
+    }
+     
+    .header-1{
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+    }
+    .header12{
+        display:flex;
+        max-width: 350px;
+        justify-content: space-between;
+    }
+    .header12, .header-1{
+        flex-grow: inherit;
+    }
+    .header-2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-2 ul{
+        display:flex;
+    }
+    .header-2 li{
+        padding:6px;
+        margin: 0 5;
+    }
+    .compra p{
+        font-size:130%;
+        text-align: right;
+       
+    }
+    .compra{
+        max-width:320;
+        padding-left: 30%;
+    }
+    
+        
+    
+    
+    .buscar input{
+        font-size: 10px 
+    }
+    .buscador{
+        display:flex;
+        flex-direction:row ;
+        align-self: center;
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    main section article{
+        width:50%;
+    }
+    
+        }
+/*desktop*/
+@media(min-width: 1200px){
+    .articulo{
+        transition: all 900ms;
+    }
+    .articulo:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .articulo .descripcion {
+        transition:all 900ms;
+    }
+   .articulo:hover .descripcion  {
+        width:100%;
+        height: auto;
+        opacity:1;
+        color:black
+   }
+    form .botones-formulario{
+        width:25%;
+    }
+    .burger-menu{
+        display: none;
+    }
+    section article div.articulo{
+        
+        background-color:white;
+        padding-bottom:0%;
+        width: 105%;
+        height: 100%
+       
+    }
+    section article div.articulo img{
+        width:80%;
+        }
+        .productos{
+        
+            width:100%;
+        }
+        .header-2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-2 ul{
+            display:flex;
+        }
+        .header-2 li{
+            padding:6px;
+            margin: 0 5;
+        }
+        main section article{
+            width:25%;
+        }
+        footer section .pie-pagina{
+            display: flex;
+        }
+
+}
+/*celular*/
+@media(max-width:679px){
+div.articulo .descripcion {
+    height:0;
+    width: 0;
+    opacity:0;
+}
+.barra-login{
+    display: none;
+}
+.site{
+    display: none;
+}
+section article div.articulo img{
+    width:80%;
+    }
+    
+    
+    .header12{
+        display: flex;
+        
+    }
+    .logo, .buscador{
+        flex-grow:0.5;
+        padding: 1px;
+    }
+    
+    
+}
+
+body{
+    background-color:#ebebeb ;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+header{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+
+
+ section .baner img{
+    width:100%;
+}
+main{
+    background-color:#ebebeb;
+    width:100%;
+}
+footer{
+    background-color: white;
+    text-align: center;
+}
+
+section article div.articulo{
+    padding: 10px;
+    background-color:white;
+    padding-bottom:0%;
+    margin-top: 10px;
+    
+}
+section article div.articulo img{
+    width:80%;
+    }
+
+main section article{
+    padding: 25px;
+    background-color:#ebebeb;
+    
+}
+.compra{
+text-align: center;
+padding: 5px;
+}
+
+
+section article p.descuento{
+    color:#39b54a;
+}
+section article div.articulo i{
+    color: #39b54a;
+    padding: 9px 7px 9px 7px;
+    border:solid 1px #39b54a;
+    border-radius: 100%;    
+    position: relative;
+    left: 90%;
+}
+
+
+.cajita{
+    border-top: 1px solid ;
+    padding:15px;
+}
+
+div.burger-menu i{
+    border-radius: 5px;
+    background-color: blue;
+    color:white;
+    font-size: 15px;
+    padding: 10px;
+   
+}
+.burger-menu{
+    text-align: center;
+    padding:4%;
+}
+.pie-pagina{
+    padding: 4%;
+    display: flex;
+    width:100%;
+}
+
+p{
+    font-size:12px;
+}
+.titulares{
+    font-size:24px;
+    text-align: center;
+    padding-top:30px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+
+.descripcion{
+    font-size:16px;
+}
+.titulo-pie{
+    font-size: 20px;
+}
+.icono-pie{
+    color:blue;
+    font-size:2em;
+    float: inline-start;
+}
+.buscador{
+    align-self: flex-start;
+    display: flex;
+    padding:3%;
+}
+
+.site{
+    padding: 2%;
+    padding-bottom:1%;
+}
+.barra-login{
+    padding:2%;
+}
+.abajo p{
+    text-align: center;
+}
+.abajo{
+    width: 40%;
+    
+}
+footer p{
+    text-align:left;
+}
+
+    
+
+.buscar{
+    display: flex;
+    font-size: 12px
+}
+
+.header-2 ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.header-2 a {
+    text-decoration: none;
+    color: #222;
+    font-size:17px;
+}
+.logo img{
+    width: 150px;
+}
+form .opciones{
+    display:flex;
+    flex-direction: column;
+}
+form button{
+padding:10px 9px;
+color:white;
+background-color:grey;
+border:none;
+margin: 3px;
+}
+form .texto{ 
+ width: 70%;
+padding:8px;
+font-size:18px;  
+}
+form{
+    font-size:18px;  
+}
+form .botones-formulario{
+display: flex;
+flex-direction: column;
+max-width: 50%;
+}    
+form .contenedor{
+    display: flex;
+flex-direction: column;
+}
+
+form div.lupa button{
+    border-radius: 24px;
+    margin: 0px;
+}
+.formulario div{
+    padding:9px;
+}
