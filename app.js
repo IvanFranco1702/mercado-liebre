@@ -8,7 +8,7 @@ app.get('/',(req,res)=>{
 res.sendFile(path.resolve(__dirname,'./views/home.html'))    
 })
 
-app.listen(3000,()=>{
+app.listen( process.env.PORT|| 3000,()=>{
     console.log('el servidor esta en marcha')
 })
 app.get('/login', (req, res)=> {
